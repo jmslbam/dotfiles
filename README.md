@@ -1,21 +1,13 @@
 jmslbam dotfiles
 ===============
 
-I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) and
-croaky/dotfiles together using the `*.local` convention described in
-thoughtbot/dotfiles.
+I use [thoughtbot/rcm](https://github.com/thoughtbot/rcms) and Homebrew and Casks
 
 Requirements
 ------------
 
-Set zsh as your login shell.
+root user
 
-    chsh -s /bin/zsh
-
-Install [rcm](https://github.com/mike-burns/rcm).
-
-    brew tap mike-burns/rcm
-    brew install rcm
 
 Install
 -------
@@ -27,18 +19,15 @@ Clone onto your laptop:
 
 
 
-Install rcm and other homebrew:
+Install rcm, Homebrew, Casks and more (not unattendant):
 
-	brew bundle dotfiles/Brewfile
+	~/dotfiles/bin/setup-laptop
 
 
-Install dotfiles:
-
-    rcup -d dotfiles -x README.md
 
 This will create symlinks for config files in your home directory.
 
-You can safely run `rcup` multiple times to update.
+You can safely run `rcup` multiple times to update afterwards.
 
 What's in it?
 -------------
@@ -53,4 +42,14 @@ What's in it?
 
 
 # To do 
+Sublime Text config
 oh-my-zsh
+SSH config
+prompt for user info like e-mail and full name. Why this is for me :) ?
+
+
+Thanks to
+---------
+https://github.com/thoughtbot/laptop/
+https://github.com/thoughtbot/dotfiles/
+https://github.com/holman/dotfiles/

@@ -13,6 +13,11 @@ trap 'ret=$?; test $ret -ne 0 && printf "failed\n\n" >&2; exit $ret' EXIT
 set -e
 ### end common-components/exit-trap
 
+#user ' - What is your (github) author name?'
+#read -e FULLNAME
+#user ' - What is your (github author) email?'
+#read -e EMIAL
+
 if [[ ! -d "$HOME/.bin/" ]]; then
   mkdir "$HOME/.bin"
 fi
@@ -87,14 +92,14 @@ fancy_echo "Set defaults (for now only OSX)"
 
 
 #Gen SSH key add asking for it.
-fancy_echo "Generate new SSH key"
-  if [[ ! -d "$HOME/.bin/" ]]; then
-    mkdir "$HOME/.ssh"
-  fi
+fancy_echo "Generate new SSH key... not"
+  #if [[ ! -d "$HOME/.ssh/" ]]; then
+  #  mkdir "$HOME/.ssh"
+  #fi
   # prompt for e-mail
   #ssh-keygen -t rsa -C "$EMAIL"
 
-  ssh-add ~/.ssh/id_rsa
-  pbcopy < ~/.ssh/id_rsa.pub
-  fancy_echo "You public key has been add to you clipboard to copy to GitHub etc"
+  #ssh-add ~/.ssh/id_rsa
+  #pbcopy < ~/.ssh/id_rsa.pub
+  #fancy_echo "You public key has been add to you clipboard to copy to GitHub etc"
   #open http://github.com

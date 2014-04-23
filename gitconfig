@@ -4,6 +4,6 @@
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
   name = Jaime Martinez
-  email = yeah@right.com
+  email = jmslbam@gmail.com
 [credential]
 	helper = osxkeychain
