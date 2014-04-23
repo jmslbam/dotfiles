@@ -27,7 +27,7 @@ Install rcm, Homebrew, Casks and more (not unattendant):
 
 This will create symlinks for config files in your home directory.
 
-You can safely run `rcup` multiple times to update afterwards.
+You can safely run `rcup` multiple times to update afterwards. Actually don't because `oh-my-zsh` is run afterwards :)
 
 What's in it?
 -------------

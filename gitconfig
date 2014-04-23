@@ -7,3 +7,5 @@
   email = jmslbam@gmail.com
 [credential]
 	helper = osxkeychain
+[push]
+	default = simple
