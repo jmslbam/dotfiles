@@ -33,6 +33,7 @@ cask install harvest
 cask install toggldesktop
 cask install skype
 
+cask install filezilla
 cask install unrarx
 cask install alfred
 # cask alfred link
