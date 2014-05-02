@@ -65,7 +65,7 @@ fancy_echo "Running Caskfile"
   brew bundle Caskfile
 ### end custom-install
 
-
+# TERMINAL
 fancy_echo "Changing your shell to zsh ..."
   chsh -s $(which zsh)
 ### end common-components/zsh
