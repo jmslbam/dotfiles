@@ -104,6 +104,10 @@ fancy_echo "Generate new SSH key... not"
   #fancy_echo "You public key has been add to you clipboard to copy to GitHub etc"
   #open http://github.com
 
+
+#Install RVM
+curl -L https://get.rvm.io | bash -s stable --ruby
+
 # Install add-ons for Firefox
 open "https://addons.mozilla.org/firefox/downloads/latest/60/addon-60-latest.xpi?src=dp-btn-primary" #Developer toolbar
 open "https://addons.mozilla.org/firefox/downloads/latest/1843/addon-1843-latest.xpi?src=dp-btn-primary" #Firebug
