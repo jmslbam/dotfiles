@@ -7,6 +7,9 @@ cask install diffmerge
 cask install deathtodsstore
 cask install poedit
 cask install sequel-pro
+cask install vagrant
+cask install virtualbox
+
 
 cask install google-chrome
 cask install firefox
