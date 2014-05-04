@@ -77,6 +77,9 @@ fi
 ### end mac-components/zsh-fix
 
 
+# Ruby
+# sudo gem install bundler
+
 fancy_echo "Copy dotfiles with rcup"
   rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
 	#exec $ZSH/scripts/bootstrap
