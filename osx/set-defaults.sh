@@ -10,7 +10,7 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 killall Finder
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+sudo nvram SystemAudioVolume='%00'
 
 
 # remove delay on dock toggle
