@@ -92,7 +92,6 @@ fancy_echo "Set defaults (for now only OSX)"
 
 
 #Gen SSH key add asking for it.
-fancy_echo "Generate new SSH key... not"
 # fancy_echo "Generate new SSH key... not"
   #if [[ ! -d "$HOME/.ssh/" ]]; then
   #  mkdir "$HOME/.ssh"
