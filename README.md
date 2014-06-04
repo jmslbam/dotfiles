@@ -1,7 +1,7 @@
 jmslbam dotfiles
 ===============
 
-I use [thoughtbot/rcm](https://github.com/thoughtbot/rcms) and Homebrew and Casks
+I use [thoughtbot/rcm](https://github.com/thoughtbot/rcm) and Homebrew and Casks
 
 Requirements
 ------------
