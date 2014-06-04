@@ -6,6 +6,7 @@ cask install github
 cask install diffmerge
 cask install deathtodsstore
 cask install poedit
+cask install mou
 cask install sequel-pro
 cask install vagrant
 cask install virtualbox
