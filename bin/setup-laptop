@@ -58,8 +58,8 @@ fancy_echo "Updating Homebrew formulas ..."
 fancy_echo "Running Brewfile"
   brew bundle Brewfile
 
-fancy_echo "Running Caskfile"
-  brew bundle Caskfile
+# fancy_echo "Running Caskfile"
+#  brew bundle Caskfile
 
 fancy_echo "Upgrading and linking OpenSSL ..."
   brew install openssl
@@ -83,8 +83,8 @@ fancy_echo "Copy dotfiles with rcup"
 	#exec $HOME/dotfiles/scripts/bootstrap
 
 # Overwrites .zshrc
-fancy_echo "Installing oh-my-zsh ..."
-  curl -L http://install.ohmyz.sh | sh
+#fancy_echo "Installing oh-my-zsh ..."
+#  curl -L http://install.ohmyz.sh | sh
 
 
 fancy_echo "Set defaults (for now only OSX)"
