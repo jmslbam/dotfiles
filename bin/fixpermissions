@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function fixfilesgit {
        echo 'fixing files'
 #    git diff --summary | grep --color 'mode change 100755 => 100644' | cut -d' ' -f7- | xargs -d'\n' chmod +x
@@ -9,13 +11,13 @@ function fixfilesgit {
 
 function fixfiles {
     echo 'fixing files';
-    find . -type f -exec chmod 644 {} \;
+    find . -type f -not -path "*/node_modules/*" -not -path "*/bower_components/*" -exec chmod 644 {} \;
     echo 'fixed files';
 }
 
 function fixdirs {
     echo 'fixing directories';
-    find . -type d -exec chmod 755 {} \;
+    find . -type d  -not -path "*/node_modules/*" -not -path "*/bower_components/*" -exec chmod 755 {} \;
     echo 'fixed directories';
 }
 
