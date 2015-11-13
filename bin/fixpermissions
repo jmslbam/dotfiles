@@ -1,11 +1,8 @@
 #!/bin/bash
 
+# don't forget to chmod +x this file
 function fixfilesgit {
-       echo 'fixing files'
-#    git diff --summary | grep --color 'mode change 100755 => 100644' | cut -d' ' -f7- | xargs -d'\n' chmod +x
-
-    #git diff --name-only -exec chmod 644 {} \;
-    #| xargs
+    echo 'fixing files'
     echo 'fixed files'
 }
 
