@@ -42,11 +42,8 @@ What's in it?
 
 
 # To do 
- - Sublime Text config
- - oh-my-zsh
+ - fix oh-my-zsh
  - SSH config
- - prompt for user info like e-mail and full name. Why this is for me :) ?
- - Use [Firefox profile](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) (Copy to `~/Library/Application Support/`. [more](http://www.mytechguide.org/97/easily-backup-aboutconfig-firefox/)
 
 Thanks to
 ---------
