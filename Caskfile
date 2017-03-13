@@ -1,7 +1,7 @@
 # Native apps installed by Cask
 
 cask install sublime-text
-cask install codekit
+cask install atom
 cask install github
 cask install diffmerge
 cask install deathtodsstore
@@ -15,12 +15,9 @@ cask install virtualbox
 cask install google-chrome
 cask install firefox
 cask install opera-mobile-emulator
-cask install flash-player
 
 
 cask install dropbox
-cask install google-drive
-cask install copy
 
 # Video and audio
 
@@ -31,8 +28,6 @@ cask install licecap
 
 # Office stuff
 
-cask install adobe-reader
-cask install limechat
 cask install harvest
 cask install toggldesktop
 cask install skype
@@ -50,8 +45,8 @@ cask install teamviewer
 cask install clock
 cask install flux
 cask install wacom-bamboo-tablet
-cask install utorrent
-cask install nzbvortex
+# cask install utorrent
+# cask install nzbvortex
 
 # cask install bartender
 # cask install macvim
