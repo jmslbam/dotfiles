@@ -62,6 +62,10 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Disable .DS_Store writing
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
