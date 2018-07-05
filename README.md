@@ -44,6 +44,19 @@ What's in it?
 # To do 
  - fix oh-my-zsh
  - SSH config
+ 
+# Separate Application
+Marktext - Markdown editor - https://marktext.github.io/website/
+Kap - Screenredorder - https://getkap.co/
+Audacity - Audio editing - https://www.audacityteam.org/download/
+Caffeine - Talks - http://lightheadsw.com/caffeine/
+CyberDuck - AWS connecting - https://cyberduck.io/
+Etcher - Disk burner - https://etcher.io/
+Gapli - SVG viewer - http://gapplin.wolfrosch.com/
+HandBrake - Video editing - https://handbrake.fr/
+ImageOptim - Images optimalisation - https://imageoptim.com/
+Karabiner - Keyboard customizer - https://pqrs.org/osx/karabiner/
+Spectacle - Window manager - https://www.spectacleapp.com/
 
 Thanks to
 ---------
