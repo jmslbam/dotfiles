@@ -20,18 +20,23 @@ killall Finder
 sudo nvram SystemAudioVolume='%00'
 
 
+
+
 # remove delay on dock toggle
 defaults write com.apple.Dock autohide-delay -float 0 && 
 killall Dock
 
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# Menu bar: disable transparency
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 
 # Disable auto-restore on Preview and Quicktime
 defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false
 defaults write com.apple.QuickTimePlayerX NSQuitAlwaysKeepsWindows -bool false
 
-# Disable Notification Center
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
-killall NotificationCenter
 
 
 ## TYPING 
@@ -112,12 +117,10 @@ defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 
-# bug
-# Menu bar: hide the Time Machine, Volume, User, and Bluetooth icons
-#for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-#  defaults write "${domain}" dontAutoLoad -array \
-#    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-#done
+defaults write com.apple.systemuiserver menuExtras -array \
+	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
@@ -133,6 +136,11 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+
+# Expand print panel by default
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 
 ###############################################################################
