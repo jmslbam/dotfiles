@@ -16,8 +16,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 defaults write com.apple.finder QLEnableTextSelection -bool true 
 killall Finder
 
+# SOUNDS
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume='%00'
+
+# Disable Userinterface feedback sounds
+defaults write "Apple Global Domain" com.apple.sound.uiaudio.enabled -int 0
 
 
 
@@ -25,6 +30,24 @@ sudo nvram SystemAudioVolume='%00'
 # remove delay on dock toggle
 defaults write com.apple.Dock autohide-delay -float 0 && 
 killall Dock
+
+# KEYBOARD
+
+# Automatically illuminate built-in MacBook keyboard in low light
+defaults write com.apple.BezelServices kDim -bool true
+# Turn off keyboard illumination when computer is not used for 5 minutes
+defaults write com.apple.BezelServices kDimTime -int 300
+
+# SCREENSHOTS
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+
+# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
+
+# Disable shadow in screenshots
+defaults write com.apple.screencapture disable-shadow -bool false
 
 ###############################################################################
 # General UI/UX                                                               #
