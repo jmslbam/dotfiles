@@ -23,15 +23,13 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# recommended by brew doctor
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{aliases,path}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+# unset file;
 
 # You may need to manually set your language environment
 export LANG=en_UK.UTF-8
-
-# user bin
-# export PATH="$HOME/bin:$PATH"
-
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/id_rsa"

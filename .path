@@ -1,0 +1,37 @@
+
+# Reset PATH
+export PATH="/usr/bin:/usr/sbin:/bin:/sbin"
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+
+# Composer
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+# What the Brew doctor ordered for gettext and linking openssl
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# Valet+
+export PATH="/usr/local/opt/valet-php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/valet-php@7.2/sbin:$PATH"
+export LDFLAGS="-L/usr/local/opt/valet-php@7.2/lib"
+export CPPFLAGS="-I/usr/local/opt/valet-php@7.2/include"
+
+
+# Load Node global installed binaries
+export PATH="$HOME/.node/bin:$PATH"
+
+# Use project specific binaries before global ones
+export PATH="node_modules/.bin:vendor/bin:$PATH"
+
+
+# use code . to open file and dirs in VSC from terminal
+export PATH="\/Applications/Visual Studio Code.app/Contents/Resources/app/bin\:$PATH"
+
+
+# You may need to manually set your language environment
+export LANG=en_UK.UTF-8
