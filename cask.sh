@@ -16,7 +16,8 @@ brew cask install vlc
 brew cask install audacity
 brew cask install handbrake
 brew cask install spotify
-
+# vlc but with touchbar
+brew install iina
 
 # Other
 brew cask install alfred
@@ -32,6 +33,14 @@ brew cask install transmission
 brew cask install spectacle
 brew cask install pdftk
 brew cask install caffeine
+brew cask install the-unarchiver
+brew cask install lulu
+
+# Office stuff
+brew cask install zoho-mail
+brew cask install mailspring
+brew cask install slack
+
 # brew cask install youtube-dl
 
 # Possible extra's
