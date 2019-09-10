@@ -33,3 +33,15 @@ done;
 
 # You may need to manually set your language environment
 export LANG=en_UK.UTF-8
+
+export PATH="/usr/local/opt/valet-php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/valet-php@7.2/sbin:$PATH"
+
+# Force MySQL 5.7 as the "mysql" version
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# NVM
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion

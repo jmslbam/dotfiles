@@ -32,6 +32,7 @@ brew install htop
 brew install tmux
 brew install ssh-copy-id
 brew install git
+brew install nvm
 
 # Update openssl
 brew install openssl
