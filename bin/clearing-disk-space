@@ -3,6 +3,9 @@
 # won't last long but will give you 1G.
 sudo rm /private/var/vm/sleepimage
 
+# Clear out Webgrind/Cachegrind Xdebug profile files
+find /private/var/tmp -name "cachegrind*" -exec rm -rf {} \;
+
 # Clean up system logs and temporary files
 #   http://www.thexlab.com/faqs/maintscripts.html
 sudo periodic daily weekly monthly
