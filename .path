@@ -5,7 +5,7 @@ export PATH="/usr/bin:/usr/sbin:/bin:/sbin"
 # recommended by brew doctor
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# Add `~/bin` to the `$PATH`
+# Add `~/bin` to the `$PATH` from dotfiles
 export PATH="$HOME/bin:$PATH";
 
 # Homebrew PHP
