@@ -9,8 +9,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH";
 
 # Homebrew PHP
-export PATH="/usr/local/opt/php@7.3/bin:$PATH"
-export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
+#export PATH="/usr/local/opt/php@7.4/bin:$PATH"
+#export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 
 # Composer
 export PATH="$PATH:$HOME/.composer/vendor/bin"
@@ -32,5 +32,11 @@ export PATH="\/Applications/Visual Studio Code.app/Contents/Resources/app/bin\:$
 # You may need to manually set your language environment
 export LANG=en_UK.UTF-8
 
-# load Node and NPM in PATH via global node bin
-# export PATH="\/Users/digitalpassenger/.nvm/versions/node/v10.16.3/bin\:$PATH"
+# export PATH="/Users/digitalpassenger/Library/Application\ Support/Local/lightning-services/mysql-5.7.28+4/bin/darwin/bin/:$PATH"
+export PATH="/Users/digitalpassenger/Library/Application Support/Local/lightning-services/mysql-5.7.28+4/bin/darwin/bin:$PATH"
+export PATH="/Applications/Local.app/Contents/Resources/extraResources/lightning-services/php-7.3.5+10/bin/darwin/bin:$PATH"
+
+export PATH="/Applications/Local.app/Contents/Resources/extraResources/lightning-services/php-7.3.5+10/bin/darwin/bin:$PATH"
+export PATH="/Applications/Local.app/Contents/Resources/extraResources/bin/wp-cli/posix:$PATH"
+
+export PATH="/Users/digitalpassenger/Library/Application Support/Local/lightning-services/php-7.4.1+14/bin/darwin/bin:$PATH"
