@@ -1,0 +1,8 @@
+#!/bin/bash
+PLUGINS=$(wp plugin list --update=available --field=name | tr -d '\r');
+# wp plugin update-all;
+for plugin in $PLUGINS; do
+    wp plugin update $plugin;
+    git add -A "$plugin";
+    git commit -m "Update plugin: $plugin";
+done;
