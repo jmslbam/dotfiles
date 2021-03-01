@@ -24,4 +24,4 @@ done;
 export LC_ALL=en_UK.UTF-8
 
 # https://stackoverflow.com/questions/15678546/git-dyld-lazy-symbol-binding-failed-symbol-not-found-iconv-open
-export DYLD_LIBRARY_PATH=/usr/lib/:$DYLD_LIBRARY_PATH
+# export DYLD_LIBRARY_PATH=/usr/lib/:$DYLD_LIBRARY_PATH
