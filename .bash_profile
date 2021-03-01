@@ -6,6 +6,7 @@
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{aliases,aliases_bash,path}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+	echo $file;
 done;
 # unset file;
 
