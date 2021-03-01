@@ -8,12 +8,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Valet+
-# export PATH="/usr/local/opt/valet-php@7.2/bin:$PATH"
-# export PATH="/usr/local/opt/valet-php@7.2/sbin:$PATH"
-# export LDFLAGS="-L/usr/local/opt/valet-php@7.2/lib"
-# export CPPFLAGS="-I/usr/local/opt/valet-php@7.2/include"
-
 # Homebrew PHP
 export PATH="/usr/local/opt/php@7.3/bin:$PATH"
 export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
