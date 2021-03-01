@@ -12,7 +12,8 @@ alias c="clear"
 alias dotfiles="cd ~/dotfiles"
 
 # Clarkson Gulp 
-alias watch="./node_modules/bin/gulp watch"
+alias gwatch="./node_modules/bin/gulp watch"
+alias gbuild="./node_modules/bin/gulp build"
 
 
 # Vagrant
