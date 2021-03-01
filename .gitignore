@@ -3,3 +3,4 @@
 *.swp
 
 alfred/Alfred.alfredpreferences/clipboard
+bin/composer
