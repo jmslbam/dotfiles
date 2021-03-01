@@ -8,13 +8,13 @@ function fixfilesgit {
 
 function fixfiles {
     echo 'fixing files';
-    find . -type f -not -path "*/node_modules/*" -not -path "*/bower_components/*" -exec chmod 644 {} \;
+    find . -type f -not -path "*/node_modules/*" -not -path "*/bower_components/*" -not -path "*/webgrind/*" -exec chmod 644 {} \;
     echo 'fixed files';
 }
 
 function fixdirs {
     echo 'fixing directories';
-    find . -type d  -not -path "*/node_modules/*" -not -path "*/bower_components/*" -exec chmod 755 {} \;
+    find . -type d  -not -path "*/node_modules/*" -not -path "*/bower_components/*" -not -path "*/webgrind/*" -exec chmod 755 {} \;
     echo 'fixed directories';
 }
 
