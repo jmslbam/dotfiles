@@ -28,17 +28,9 @@ source $ZSH/oh-my-zsh.sh
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.{aliases,path}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+  echo $file;
 done;
 # unset file;
-
-# You may need to manually set your language environment
-export LANG=en_UK.UTF-8
-
-# For Homebrew
-export PATH="/usr/local/sbin:$PATH"
-
-# Composer
-export PATH="~/.composer/vendor/bin/:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
