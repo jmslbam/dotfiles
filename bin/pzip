@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+    echo "ERROR: Provide directory to read";
+    exit 1;
+fi
+
+if [ -z "$2" ]
+then
+    echo "ERROR: Provide version of plugin.";
+    exit 1;
+fi
+
+FILENAME="$1-$2.zip";
+
+rm $FILENAME;
+
+zip -r -X $FILENAME $1 -x "*.DS_Store";
+
+echo "Zipping $FILENAME";
