@@ -13,7 +13,7 @@ export PATH="$HOME/bin:$PATH";
 #export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 
 # Composer
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+#export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # What the Brew doctor ordered for gettext and linking openssl
 export PATH="/usr/local/opt/gettext/bin:$PATH"
